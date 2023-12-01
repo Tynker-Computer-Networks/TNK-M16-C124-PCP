@@ -54,6 +54,7 @@ def typingSpeedTest():
     startTime = time.time()
 
     # Add  listener to listen onPress and onRelease key events
+    # Move the userInput inside the listner
     with Listener(on_press=onPress, on_release=onRelease) as listener:
         userInput = input("Type the sentence here: ")
         listener.stop()
